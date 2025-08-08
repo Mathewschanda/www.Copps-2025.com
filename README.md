@@ -353,6 +353,15 @@ color: blue;
     }
     ol { list-style-type: decimal; padding: 10px; }
     li { padding: 2px; border-bottom: 1px solid #ccc; }
+    #statusDisplay {
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
   </style>
 </head>
 <body>
@@ -405,9 +414,16 @@ pwa&source=mlapk
 
 onclick="viewOrders()">HISTORY</a></li>
 <li> <a href="file:///C:/Users/ADMIN/Desktop/COPPS/project defence/QUIZ/QUIZ.html">TAKE A QUIZ</a></li>
-<li> <a href="status.html">STATUS
-<i class="fa fa-handshake-o" aria-hidden="true"></i>
-</a></li>
+
+
+
+<li> 
+  <a onclick="viewPrize()">STATUS <i class="fa fa-handshake-o" aria-hidden="true"></i> </a>
+  <div id="statusDisplay" style="display:none;"></div>
+</li>
+
+
+
 </ul>
 </section>
 
@@ -1315,6 +1331,25 @@ function getNumberOfOrders() {
   return userOrders.length;
 }
 
+// Add this function to display prize gift or message
+function viewPrize() {
+  const statusElement = document.getElementById('statusDisplay');
+  
+  if (statusElement.style.display === 'block') {
+    statusElement.style.display = 'none';
+  } else {
+    statusElement.style.display = 'block';
+    const orders = JSON.parse(localStorage.getItem('orders')) || [];
+    const currentUser = localStorage.getItem('currentUser');
+    const userOrders = orders.filter(order => order.user === currentUser);
+    
+    if (userOrders.length >= 5) {
+      statusElement.innerHTML = '<p>Congratulations! You have earned a PRIZE GIFT 🎁</p>';
+    } else {
+      statusElement.innerHTML = `NO PRIZE FOR YOU. PLACE ${5 - userOrders.length} MORE ORDERS TO INCREASE YOUR LOYALTY POINTS`;
+    }
+  }
+}  
 // Display gift icon
 function displayGiftIcon() {
   const numberOfOrders = getNumberOfOrders();
