@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -184,7 +184,6 @@ text-decoration: underline;
 color: blue;
 }
   </style>
-</head>
 
 <body>
 
