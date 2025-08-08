@@ -315,6 +315,7 @@ color: blue;
   <title>copps.com</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/6.6.0/css/all.min.css"/>
+</head>
   <style>
     * {
       margin: 0;
@@ -364,7 +365,7 @@ color: blue;
   z-index: 1000;
 }
   </style>
-</head>
+
 <body>
     
 
