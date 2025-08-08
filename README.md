@@ -446,11 +446,44 @@ onclick="viewOrders()">HISTORY</a></li>
 <h1>WELCOME TO COPPS</h1>
 <p>where high customer satisfaction is priotised</p>
 
+<input type="text" id="searchInput" class="search-input" placeholder="Search products...">
+<button class="search-button" onclick="searchProduct()">Search</button>
+<div id="searchResult"></div>
+
+<script>
+  function searchProduct() {
+    const searchInput = document.getElementById('searchInput').value.toLowerCase();
+    const products = document.getElementsByClassName('pro');
+    const searchResult = document.getElementById('searchResult');
+
+    searchResult.innerHTML = 'Loading...';
+
+    setTimeout(() => {
+      let found = false;
+
+      for (let i = 0; i < products.length; i++) {
+        const product = products[i];
+        const productName = product.querySelector('h5').textContent.toLowerCase();
+
+        if (productName.includes(searchInput)) {
+          product.style.border = '2px solid red';
+          product.scrollIntoView({ behavior: 'smooth' });
+          searchResult.innerHTML = '';
+          found = true;
+        } else {
+          product.style.border = '';
+        }
+      }
+
+      if (!found) {
+        searchResult.innerHTML = 'ITEM NOT AVAILABLE';
+      }
+    }, 1000);
+  }
+</script>
+
 <body>
-<div class="search-container">
-<input type="text" id="searchInput" class="search-input" placeholder="Search in COPPS">
-<button onclick="searchGoogle()" class="search-button">Search</button>
-</div>
+
 <div class="ad-container">
 <div class="ad-text active"><p id="ad">EVERY TRANSACTION <br>INCREASES <br>YOUR
 LOYALTY POINTS</p></div>
