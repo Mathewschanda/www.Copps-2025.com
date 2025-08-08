@@ -125,7 +125,7 @@ padding: 8px 0;
 border-radius: 5px;
 outline: none;
 border: none;
-width: 100%;
+width: 50%;
 background: rgb(125,125,125,235);
 color: white;
 cursor: pointer;
@@ -369,7 +369,7 @@ color: blue;
 }
   </style>
 
-<body>
+
     
 
 
@@ -482,7 +482,7 @@ onclick="viewOrders()">HISTORY</a></li>
   }
 </script>
 
-<body>
+
 
 <div class="ad-container">
 <div class="ad-text active"><p id="ad">EVERY TRANSACTION <br>INCREASES <br>YOUR
