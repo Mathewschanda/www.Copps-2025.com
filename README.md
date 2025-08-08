@@ -7,9 +7,10 @@
 
   <!-- my css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/6.6.0/css/all.min.css"/>
+</head>
 <!-- signin/signup starts-->
 
-<section id="search">
+
     
   <style>
     
@@ -184,7 +185,7 @@ text-decoration: underline;
 color: blue;
 }
   </style>
-</head>
+<section id="search">
 <body>
 
 <div id="signuppage">
@@ -305,9 +306,9 @@ color: blue;
     
 
   </style>
-</head>
-<body>
-<!DOCTYPE html>
+
+
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
