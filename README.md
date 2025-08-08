@@ -442,7 +442,7 @@ onclick="viewOrders()">HISTORY</a></li>
 <section id="search">
 <h1>WELCOME TO COPPS</h1>
 <p>where high customer satisfaction is priotised</p>
-</head>
+
 <body>
 <div class="search-container">
 <input type="text" id="searchInput" class="search-input" placeholder="Search in COPPS">
@@ -1431,5 +1431,5 @@ function showSignup() {
 </script>
 
 </body>
-</html>
+
 
