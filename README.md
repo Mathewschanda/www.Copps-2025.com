@@ -1,4 +1,4 @@
-<DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -184,7 +184,7 @@ text-decoration: underline;
 color: blue;
 }
   </style>
-
+</head>
 <body>
 
 <div id="signuppage">
@@ -305,9 +305,9 @@ color: blue;
     
 
   </style>
-
+</head>
 <body>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -409,7 +409,7 @@ onclick="viewOrders()">HISTORY</a></li>
 <i class="fa fa-handshake-o" aria-hidden="true"></i>
 </a></li>
 </ul>
-
+</section>
 </div>
 </header>
 <!-- Search bar starts-->
@@ -1388,5 +1388,5 @@ function showSignup() {
 </script>
 
 </body>
-</HTML>
+</html>
 
