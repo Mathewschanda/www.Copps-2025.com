@@ -410,6 +410,13 @@ onclick="viewOrders()">HISTORY</a></li>
 </a></li>
 </ul>
 </section>
+
+
+<div id="orderHistory" style="display:none;">
+  <h5 class="mt-4">Order History</h5>
+  <ul id="orderList" class="list-group"></ul>
+</div>
+
 </div>
 </header>
 <!-- Search bar starts-->
@@ -1127,10 +1134,7 @@ li.textContent = `${item.productName} - K${item.price.replace('$', 'k')}`;
     <button class="btn btn-secondary" onclick="logout()">Logout</button>
   </div>
 
-  <div id="orderHistory" style="display:none;">
-    <h5 class="mt-4">Order History</h5>
-    <ul id="orderList" class="list-group"></ul>
-  </div>
+  
 </div>
 
 <script>
@@ -1271,33 +1275,36 @@ function updateCartDisplay() {
   }
 
   function viewOrders() {
-    const orderHistory = document.getElementById('orderHistory');
-    const orderList = document.getElementById('orderList');
+  const orderHistory = document.getElementById('orderHistory');
+  const orderList = document.getElementById('orderList');
+  
+  if (orderHistory.style.display === 'block') {
+    orderHistory.style.display = 'none';
+  } else {
     orderHistory.style.display = 'block';
     orderList.innerHTML = '';
-
     const orders = JSON.parse(localStorage.getItem('orders')) || [];
     const currentUser = localStorage.getItem('currentUser');
-
     const userOrders = orders.filter(order => order.user === currentUser);
-
+    
     if (userOrders.length === 0) {
       orderList.innerHTML = '<li class="list-group-item">No orders yet.</li>';
       return;
     }
-
+    
     userOrders.forEach((order, index) => {
       const li = document.createElement('li');
       li.className = 'list-group-item';
-      li.innerHTML = `
-        <strong>Order ${index + 1}</strong> - ${order.date}
-        <ul>
-          ${order.items.map(item => `<li>${item.productName} :k${item.price}</li>`).join('')}
-        </ul>
+      li.innerHTML = ` 
+        <strong>Order ${index + 1}</strong> - ${order.date} 
+        <ul> 
+          ${order.items.map(item => `<li>${item.productName} - K${item.price}</li>`).join('')} 
+        </ul> 
       `;
       orderList.appendChild(li);
     });
   }
+}
 
 
 // Get number of orders
