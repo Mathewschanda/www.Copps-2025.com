@@ -1,4 +1,4 @@
-
+<DOCTYPE HTML>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -1388,4 +1388,5 @@ function showSignup() {
 </script>
 
 </body>
+</HTML>
 
