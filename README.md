@@ -14,7 +14,10 @@
     
   <style>
     
-
+body:before {
+  display: none;
+}
+    
     *{
 margin: 0;
 padding: 0;
