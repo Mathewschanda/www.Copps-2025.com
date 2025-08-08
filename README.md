@@ -383,14 +383,18 @@ color: blue;
 <!-- menu content here -->
 <section id="header">
 <ul id="navbar">
-<li> <a class="actie" href="home.html">
+<li> <a class="actie" href="
+       https://mathewschanda.github.io/www.Copps-2025.com/
+       ">
 <i class="fa fa-home" aria-hidden="true"></i> HOME
 </a></li>
 <li> <a href="#products">PRODUCTS</a></li>
 <li> <a href="#cartList">
 <i class="fa fa-shopping-basket" aria-hidden="false"></i>CART LIST
 </a></li>
-<li> <a href="about.html">ABOUT</a></li>
+<li> <a href="
+       https://www.facebook.com/apaniking.highest.90?mibextid=rS40aB7S9Ucbxw6v
+       ">visit us on Facebook</a></li>
 <li> <a href="
 https://www.google.com/maps/@-15.4140672,28.2984448,9z?force=qVTs2FOxxTmHHo79-
 pwa&source=mlapk
