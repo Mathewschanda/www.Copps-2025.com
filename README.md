@@ -588,7 +588,7 @@ BUY</button>
 <section id="cartlist">
     <div id="cart">
   <h2 class="mt-4">ITEMS IN YOUR CART LIST WILL SHOW HERE:</h2>
-  <ul id="cartList" class="list-group mb-3"></ul>
+  <ol id="cartList" class="list-group mb-3"></ol>
   
   
 <ol style="list-style-type: lower-roman;"
@@ -1149,7 +1149,7 @@ li.textContent = `${item.productName} - K${item.price.replace('$', 'k')}`;
   <div class="d-grid gap-2">
     <button class="btn btn-warning" onclick="placeOrder()">Place Order</button>
     <button class="btn btn-secondary" onclick="logout()">Logout</button>
-  </div>
+  
 
   
 </div>
