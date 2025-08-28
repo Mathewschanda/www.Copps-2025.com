@@ -527,7 +527,7 @@ id="product1" class="section-p1">
    
       
 <div class="pro">
-<img src="file:///storage/emulated/0/Pictures/facebook/1746466746755.jpg" alt="image unavailable">
+<img src="https://www.facebook.com/61580111722789/posts/pfbid025QqwnPwBkphW4CJ3eysUnahtdCM2c7J7okLD7Zrm5trmAuwDJNwM5TS87Qh6WBz7l/ " alt="image unavailable">
 <div class="des">
 <span>
 Android
@@ -550,7 +550,7 @@ BUY</button>
 
 
     <div class="pro">
-    <img src=" file:///C:/Users/BLAQDRUM/Desktop/project defence/images/fridge.jpeg" alt="image unavailable">
+    <img src=" " alt="image unavailable">
     <div class="des">
         <span>
         sumsung
