@@ -406,8 +406,7 @@ color: blue;
 <li> <a href="#cartList">
 <i class="fa fa-shopping-basket" aria-hidden="false"></i>CART LIST
 </a></li>
-<li> <a href="
-       https://www.facebook.com/apaniking.highest.90?mibextid=rS40aB7S9Ucbxw6v
+<li> <a href="https://www.facebook.com/profile.php?id=61580111722789
        ">visit us on Facebook</a></li>
 <li> <a href="
 https://www.google.com/maps/@-15.4140672,28.2984448,9z?force=qVTs2FOxxTmHHo79-
