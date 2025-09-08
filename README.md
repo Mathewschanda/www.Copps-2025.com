@@ -1199,8 +1199,7 @@ li.textContent = `${item.productName} - K${item.price.replace('$', 'k')}`;
     localStorage.removeItem('currentUser','currentpage');
     cart = [];
     updateCartDisplay();
-    removeshop()
-    showLogin();
+    removeshop();
   }
 </script>
 
@@ -1481,7 +1480,6 @@ function placeOrder() {
     cart = [];
     updateCartDisplay();
     removeshop();
-    showLogin();
   }
 function showLogin() {
   document.getElementById('signupPage').style.display = 'none';
