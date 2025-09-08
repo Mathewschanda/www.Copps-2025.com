@@ -644,7 +644,7 @@ space-between;
 padding: 20px 80px;
 background: rgb(255,155,255);
 box-shadow: 0 5px 10px rgb(0,0,0,0.9);
-width: 900px;
+width: 100%;
 position: fixed;
 top: 0;
 left: 0;
