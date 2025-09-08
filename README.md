@@ -1193,26 +1193,11 @@ li.textContent = `${item.productName} - K${item.price.replace('$', 'k')}`;
     });
   }
 
-  
-
-  function logout() {
-    localStorage.removeItem('currentUser','currentpage');
-    cart = [];
-    updateCartDisplay();
-    removeshop();
-  }
 </script>
 
-  
-  
-
-
-
-
-
-  <div class="d-grid gap-2">
+   <div class="d-grid gap-2">
     <button class="btn btn-warning" onclick="placeOrder()">Place Order</button>
-    <button class="btn btn-secondary" onclick="removeshop()">Logout</button>
+    
   
 
   
@@ -1475,12 +1460,7 @@ function placeOrder() {
   displayGiftIcon(); // Call displayGiftIcon function
 }
   
-  function logout() {
-    localStorage.removeItem('currentUser');
-    cart = [];
-    updateCartDisplay();
-    removeshop();
-  }
+  
 function showLogin() {
   document.getElementById('signupPage').style.display = 'none';
   document.getElementById('loginPage').style.display = 'block';
