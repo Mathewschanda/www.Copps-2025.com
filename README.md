@@ -1187,6 +1187,7 @@ li.textContent = `${item.productName} - K${item.price.replace('$', 'k')}`;
         <strong>Order ${index + 1}</strong> - ${order.date}
         <ul>
           ${order.items.map(item => `<li>${item.productName} - $${item.price}</li>`).join('')}
+        
         </ul>
       `;
       orderList.appendChild(li);
@@ -1198,6 +1199,7 @@ li.textContent = `${item.productName} - K${item.price.replace('$', 'k')}`;
    <div class="d-grid gap-2">
     <button class="btn btn-warning" onclick="placeOrder()">Place Order</button>
     
+<button class="btn btn-warning" onclick="showSignup()">logout</button>
   
 
   
