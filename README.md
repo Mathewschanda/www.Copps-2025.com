@@ -524,8 +524,15 @@ id="product1" class="section-p1">
 <div class="pro-comtainer">
 
    
-      
-<div class="pro">
+
+
+   <div class="carousel-container">
+  <button class="arrow left-arrow">&#60;</button>
+  <ul class="content-list">
+   
+    <li>
+    
+ <div class="pro">
 <img src="https://www.facebook.com/61580111722789/posts/122093992125003724/?mibextid=rS40aB7S9Ucbxw6v " alt="picture coming soon">
 <div class="des">
 <span>
@@ -545,31 +552,57 @@ BUY</button>
 </div>
 </div>
 </div>
+</li>
+<li>
+<div class="pro">
+<img src=" " alt="picture coming soon">
+<div class="des">
+<span>
+bedroom 
+</span>
+<h5>comfortable mattress</h5>
+<div class="star">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<p>k14950.00</p>
+<button onclick="addToCart('confortable mattress', 14950.00)">
+<i class="fa fa-cart-plus"></i>
+BUY</button>
+</div>
+</div>
+</div>
+</li>
+<li>
 
+<div class="pro">
+<img src=" " alt="picture coming soon">
+<div class="des">
+<span>
+windows os
+</span>
+<h5> dell latitude</h5>
+<div class="star">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<p>k14950.00</p>
+<button onclick="addToCart('dell latitude', 14950.00)">
+<i class="fa fa-cart-plus"></i>
+BUY</button>
+</div>
+</div>
+</div>
+</li>
 
-
-    <div class="pro">
-    <img src=" " alt="image unavailable">
-    <div class="des">
-        <span>
-        sumsung
-        </span>
-        <h5>SUMSUNG REFRIGIRATOR</h5>
-        <div class="star">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <p>k8950.00</p>
-        <button onclick="addToCart('SUMSUNG REFRIGILATOR', 8950.00)">
-        <i class="fa fa-cart-plus"></i>
-        BUY</button>
-        </div>
-        </div>
-        </div>
+<li>
     
-        <div class="pro">
+    
+   <div class="pro">
             <img src="file:///C:/Users/BLAQDRUM/Desktop/project defence/images/tv.jpg " alt="image unavailable">
             <div class="des">
             <span>
@@ -589,6 +622,7 @@ BUY</button>
             </div>
             </div>
             </div>
+            </li>
         
                       
 </div>
