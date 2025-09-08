@@ -1212,7 +1212,7 @@ li.textContent = `${item.productName} - K${item.price.replace('$', 'k')}`;
 
   <div class="d-grid gap-2">
     <button class="btn btn-warning" onclick="placeOrder()">Place Order</button>
-    <button class="btn btn-secondary" onclick="logout()">Logout</button>
+    <button class="btn btn-secondary" onclick="removeshop()">Logout</button>
   
 
   
