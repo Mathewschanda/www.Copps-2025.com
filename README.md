@@ -232,7 +232,11 @@ color: blue;
   </div>
 </div>
 
+<div class="card p-4" id="shopPage" style="display:none;">
+  <h4>Hello <span id="userDisplay"></span>!</h4>
 
+  <div id="products" class="mt-3">
+    
 
 
 
@@ -1186,7 +1190,7 @@ li.textContent = `${item.productName} - K${item.price.replace('$', 'k')}`;
   
 
   function logout() {
-    localStorage.removeItem('currentUser');
+    localStorage.removeItem('currentUser','currentpage');
     cart = [];
     updateCartDisplay();
     showLogin();
@@ -1466,7 +1470,7 @@ function placeOrder() {
 }
   
   function logout() {
-    localStorage.removeItem('currentUser');
+    localStorage.removeItem('currentUser','currentpage');
     cart = [];
     updateCartDisplay();
     
