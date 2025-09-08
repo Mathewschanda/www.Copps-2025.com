@@ -523,14 +523,7 @@ id="product1" class="section-p1">
 </p>
 <div class="pro-comtainer">
 
-   
-
-
-   <div class="carousel-container">
-  <button class="arrow left-arrow">&#60;</button>
-  <ul class="content-list">
-   
-    <li>
+ 
     
  <div class="pro">
 <img src="https://www.facebook.com/61580111722789/posts/122093992125003724/?mibextid=rS40aB7S9Ucbxw6v " alt="picture coming soon">
@@ -552,8 +545,7 @@ BUY</button>
 </div>
 </div>
 </div>
-</li>
-<li>
+
 <div class="pro">
 <img src=" " alt="picture coming soon">
 <div class="des">
@@ -574,8 +566,7 @@ BUY</button>
 </div>
 </div>
 </div>
-</li>
-<li>
+
 
 <div class="pro">
 <img src=" " alt="picture coming soon">
@@ -597,9 +588,7 @@ BUY</button>
 </div>
 </div>
 </div>
-</li>
 
-<li>
     
     
    <div class="pro">
@@ -622,8 +611,7 @@ BUY</button>
             </div>
             </div>
             </div>
-            </li>
-        </div>
+            
                       
 </div>
 </section>
@@ -635,34 +623,7 @@ BUY</button>
 </section>
 <section id="1">
    <style>
-   .carousel-container {
-  display: flex;
-  align-items: center;
-}
-
-.arrow {
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.content-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 20px;
-  display: flex;
-  overflow: hidden;
-}
-
-.content-list li {
-  min-width: 100px;
-  margin: 0 10px;
-  text-align: center;
-}
-
-
-   #cart h2{
+ #cart h2{
             color: blue;
             text-align: center;
             text-decoration: underline;
@@ -1017,26 +978,7 @@ cursor: pointer;
 <!--stylesheet ends-->
 <script>
 
-  let currentIndex = 0;
-const items = document.querySelectorAll('.content-list li');
-const list = document.querySelector('.content-list');
-const leftArrow = document.querySelector('.left-arrow');
-const rightArrow = document.querySelector('.right-arrow');
 
-rightArrow.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % items.length;
-  updateListPosition();
-});
-
-leftArrow.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + items.length) % items.length;
-  updateListPosition();
-});
-
-function updateListPosition() {
-  const offset = -currentIndex * (items[0].offsetWidth + 20); // adjust for margins
-  list.style.transform = `translateX(${offset}px)`;
-}
 const adTexts = document.querySelectorAll('.ad-text');
 let currentIndex = 0;
 function showAdvert(index) {
