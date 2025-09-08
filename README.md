@@ -1106,7 +1106,7 @@ alert('Please type in the item you are searching for');
   
   function removeshop() {
     document.getElementById('signupPage').style.display = 'none';
-    document.getElementById('loginPage').style.display = 'block';
+    document.getElementById('loginPage').style.display = 'none';
     document.getElementById('shopPage').style.display = 'none';
   }
   function showSignup() {
@@ -1199,7 +1199,7 @@ li.textContent = `${item.productName} - K${item.price.replace('$', 'k')}`;
    <div class="d-grid gap-2">
     <button class="btn btn-warning" onclick="placeOrder()">Place Order</button>
     
-<button class="btn btn-warning" onclick="showSignup()">logout</button>
+<button class="btn btn-warning" onclick="showSignup(),removeshop()">logout</button>
   
 
   
