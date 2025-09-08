@@ -233,7 +233,7 @@ color: blue;
 </div>
 
 <div class="card p-4" id="shopPage" style="display:none;">
-  <h4>Hello <span id="userDisplay"></span>!</h4>
+  
 
   <div id="products" class="mt-3">
     
