@@ -234,7 +234,7 @@ color: blue;
 
 <div class="card p-4" id="shopPage" style="display:none;">
   
-
+<h4>Hello <span id="userDisplay"></span>!</h4>
   <div id="products" class="mt-3">
     
 
@@ -1103,6 +1103,12 @@ alert('Please type in the item you are searching for');
     }
   }
 
+  
+  function removeshop() {
+    document.getElementById('signupPage').style.display = 'none';
+    document.getElementById('loginPage').style.display = 'block';
+    document.getElementById('shopPage').style.display = 'none';
+  }
   function showSignup() {
     document.getElementById('signupPage').style.display = 'block';
     document.getElementById('loginPage').style.display = 'none';
@@ -1193,6 +1199,7 @@ li.textContent = `${item.productName} - K${item.price.replace('$', 'k')}`;
     localStorage.removeItem('currentUser','currentpage');
     cart = [];
     updateCartDisplay();
+    removeshop()
     showLogin();
   }
 </script>
@@ -1470,10 +1477,10 @@ function placeOrder() {
 }
   
   function logout() {
-    localStorage.removeItem('currentUser','currentpage');
+    localStorage.removeItem('currentUser');
     cart = [];
     updateCartDisplay();
-    
+    removeshop();
     showLogin();
   }
 function showLogin() {
