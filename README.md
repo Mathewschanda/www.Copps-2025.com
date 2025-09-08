@@ -232,11 +232,7 @@ color: blue;
   </div>
 </div>
 
-<div class="card p-4" id="shopPage" style="display:none;">
-  <h4>Hello <span id="userDisplay"></span>!</h4>
 
-  <div id="products" class="mt-3">
-    
 
 
 
@@ -312,7 +308,7 @@ color: blue;
 
 
 
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <title>copps.com</title>
