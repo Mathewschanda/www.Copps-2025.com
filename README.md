@@ -1203,9 +1203,7 @@ li.textContent = `${item.productName} - K${item.price.replace('$', 'k')}`;
 
 <script>
   function logout() {
-    // Remove any session or local storage data if needed
-    localStorage.clear();
-    sessionStorage.clear();
+  
 
     // Redirect to login page
     window.location.href = 'https://mathewschanda.github.io/www.Copps-2025.com/';
