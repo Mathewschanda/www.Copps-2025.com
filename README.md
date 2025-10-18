@@ -1199,7 +1199,19 @@ li.textContent = `${item.productName} - K${item.price.replace('$', 'k')}`;
    <div class="d-grid gap-2">
     <button class="btn btn-warning" onclick="placeOrder()">Place Order</button>
     
-<a class="btn btn-warning"  href="https://mathewschanda.github.io/www.Copps-2025.com/#products">logout</a>
+<button onclick="logout()">Logout</button>
+
+<script>
+  function logout() {
+    // Remove any session or local storage data if needed
+    localStorage.clear();
+    sessionStorage.clear();
+
+    // Redirect to login page
+    window.location.href = 'https://mathewschanda.github.io/www.Copps-2025.com/';
+  }
+</script>
+
 
 
   
