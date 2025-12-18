@@ -526,7 +526,7 @@ id="product1" class="section-p1">
  
     
  <div class="pro">
-<img src="https://www.facebook.com/61580111722789/posts/122093992125003724/?mibextid=rS40aB7S9Ucbxw6v " alt="picture coming soon">
+<img src="file:///D:/copps/download%20(1).webp" alt="picture coming soon">
 <div class="des">
 <span>
 Android
@@ -569,12 +569,12 @@ BUY</button>
 
 
 <div class="pro">
-<img src=" " alt="picture coming soon">
+<img src="file:///D:/copps/download.webp" alt="picture coming soon">
 <div class="des">
 <span>
 windows os
 </span>
-<h5> dell latitude</h5>
+<h5> dell latitude 3190</h5>
 <div class="star">
 <i class="fas fa-star"></i>
 <i class="fas fa-star"></i>
